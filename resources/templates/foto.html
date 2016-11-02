@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{.Nama}}</title>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<br> {{if .NotError}}
+				<img class="center-block" id="photo" src="data:image/jpeg;base64,{{.Foto}}" height="450px" width="300px"> {{end}}
+				<div>
+					<h1 class="text-center" id="nama">{{.Nama}}</h1>
+					<h2 class="text-center" id="npm">{{.NPM}}</h2>
+					<h2 class="text-center" id="jurusan">{{.Jurusan}}</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
